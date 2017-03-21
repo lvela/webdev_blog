@@ -2,8 +2,8 @@
 
 one:
   body: MyText
-  user: one
+  article: one
 
 two:
   body: MyText
-  user: two
+  article: two
