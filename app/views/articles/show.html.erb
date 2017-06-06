@@ -1,13 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<span
-  data-title="<%= @article.title %>"
-  data-body="<%= @article.body %>">
-</span>
-
-<div id="article-show"></div>
+<%= react_component('ArticlesShow', {title: @article.title, body: @article.body}) %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
 
-<%= javascript_pack_tag 'articles_show' %>
+<%= javascript_pack_tag 'application' %>
